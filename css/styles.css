@@ -331,10 +331,10 @@ img {
     flex-wrap: wrap;
 }
 
-.team-list .item{
+.team-list > .item{
     background-color: var(--button-select-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .team-name {
@@ -367,10 +367,6 @@ img {
 .svg-social.team-social{
     fill: #AFB1B8;
 }
-
-.social-list .team-social:hover {
-    fill: var(--button-select-text-color);
-} 
 
 .team .social-list {
     margin-left: 32px;
@@ -467,20 +463,13 @@ img {
 
 .social-list .item {
     display: flex;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    box-shadow: none;
-    justify-content: center;
 }
 
 .social-list .item:not(:last-child){
     margin-right: 10px;
 }
 
- .social-list .item:hover {
+ /* .social-list .item:hover {
     background: var(--select-text-color);
     fill: var(--button-select-text-color);
 } 
@@ -488,10 +477,40 @@ img {
  .item-link:hover .team-social{
     background: var(--select-text-color); 
     fill: var(--button-select-text-color);
-} 
+}  */
 
-.social-list .item-link{
+.social-list .item-link-footer {
     display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    fill: var(--button-select-text-color);
+}
+.social-list .item-link-footer:hover,
+.social-list .item-link-footer:focus {
+    background: var(--select-text-color);
+    fill: var(--button-select-text-color);
+}
+
+.social-list .item-link-team {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+
+.social-list .item-link-team:hover{
+    background: var(--select-text-color);
+    /* fill: var(--button-select-text-color); */
+    /* color: red; */
 }
 
 .svg-social{
