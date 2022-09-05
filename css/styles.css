@@ -472,6 +472,7 @@ img {
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    box-shadow: none;
     justify-content: center;
 }
 
