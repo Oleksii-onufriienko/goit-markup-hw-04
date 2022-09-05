@@ -392,7 +392,8 @@ img {
     fill: #AFB1B8;
 }
 
-.item .client:hover{
+.item .client:hover,
+.item .client:focus{
     border: 1px solid var(--select-text-color);
     fill: var(--select-text-color);
 }
